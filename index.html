@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container grid">
+        <h1>Etch-a-Sketch</h1>
+        
+        <div class="controls flex">
+            <button id="size-btn">Set Grid Size (16-100)</button>
+            <h2>Select a pen color:</h2>
+            <label> <input type="radio" name="pen-color" id="black" value="black" checked>black</label>
+            <label><input type="radio" name="pen-color" id="random" value="random">random color</label>
+            <label><input type="radio" name="pen-color" id="gradient" value="gradient">black gradient</label>
+        </div>
+        
+
+        <div class="canvas">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
