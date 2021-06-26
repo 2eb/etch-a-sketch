@@ -1,26 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
 }
-.canvas {
-    padding: 2rem;
-    border: 1px solid black;
-    grid-column: 2/-1;
-    grid-row: 2/-1;
-}
-.controls {
-    grid-column: 1/2;
-    grid-row: 2/-1;
-}
-h1 {
-    grid-column: 1/-1;
-    grid-row: 1/2;
+
+.main{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 
-.flex{
+.canvas {
+    width: 800px;
+    box-shadow: 0 0 10px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin-right: 3em;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 200px 1fr;
+
+h1 {
+    margin-top: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    text-align: center;
 }
+
+.gradient-text {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #fff, #000);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+h1 #author {
+    margin-left: .5em;
+    font-size: .4em;
+    color: #666;
+}
+
+#size-btn {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px  rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 3em 0 1em 0;
+    font-size: 1.2rem;
+}
+

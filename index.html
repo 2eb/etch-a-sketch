@@ -7,20 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container grid">
-        <h1>Etch-a-Sketch</h1>
-        
-        <div class="controls flex">
-            <button id="size-btn">Set Grid Size (16-100)</button>
-            <h2>Select a pen color:</h2>
-            <label> <input type="radio" name="pen-color" id="black" value="black" checked>black</label>
-            <label><input type="radio" name="pen-color" id="random" value="random">random color</label>
-            <label><input type="radio" name="pen-color" id="gradient" value="gradient">black gradient</label>
-        </div>
-        
+    <div class="container">
+        <h1 id="title">Etch-a-Sketch <span id="author">by Zeb</span></h1>
 
-        <div class="canvas">
-        </div>
+        <section class="main">
+            <div class="controls flex">
+                <button id="size-btn">Set Grid Size (16-100)</button>
+                <h2>Select a pen color:</h2>
+                <label> <input type="radio" name="pen-color" id="black" value="black" checked>black</label>
+                <label><input type="radio" name="pen-color" id="random" value="random">random color</label>
+                <label><input type="radio" name="pen-color" id="gradient" value="gradient">black gradient</label>
+            </div>
+            
+
+            <div class="canvas">
+            </div>
+        </section>
     </div>
 </body>
 <script src="script.js"></script>
