@@ -13,7 +13,7 @@ function createCell (number) {
     }
 }
 //set initial canvas to a 16x16 grid
-myCanvas.style.height = '600px';
+myCanvas.style.height = '800px';
 createCell(16);
 createGrid(16);
 listen();
@@ -47,7 +47,13 @@ function clearGrid(){
 sizeBtn.addEventListener("click",setSize);
 function setSize() {
     clearGrid();
-    const gridSize = parseInt(prompt("Enter a number between 16 and 100 to set canvas size"));
+    
+    let gridSize;
+    do{
+        gridSize = +prompt("Enter a number between 16 and 100 to set canvas size");
+    }
+    while (gridSize > 101 || gridSize < 15)
+    
     createCell(gridSize);
     createGrid(gridSize);
     listen();
